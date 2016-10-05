@@ -2,8 +2,8 @@ use wellbook;
 
 set hive.execution.engine=tez;
 
-add jar /home/dev/wellbook/SequenceFileKeyValueInputFormat/target/SequenceFileKeyValueInputFormat-0.1.0-SNAPSHOT.jar;
-add file /home/dev/wellbook/pyenv;
+add jar /root/wellbook/SequenceFileKeyValueInputFormat/target/SequenceFileKeyValueInputFormat-0.1.0-SNAPSHOT.jar;
+add file /root/wellbook/pyenv;
 add file ${hiveconf:SCRIPT};
 
 drop table if exists stage;
